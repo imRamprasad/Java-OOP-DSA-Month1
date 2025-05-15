@@ -1,0 +1,74 @@
+package month1;
+
+public class Day1ClassesObjects {
+
+	public static void main(String[] args) {
+		                                    //Task1 Create a Student Class
+		System.out.println("Task1");
+		Task1 T1=new Task1("ram1",11,"A");
+		Task1 T2=new Task1("ram2",12,"B");
+		Task1 T3=new Task1("ram3",13,"F");
+		T1.displayStudentInfo();
+		T2.displayStudentInfo();
+		T3.displayStudentInfo();
+		System.out.println(T1.isPassed());
+		System.out.println(T3.isPassed());
+		
+		                                  //Task2 Create a Rectangle Class
+		System.out.println("Task2");
+		Task2 T4=new Task2(10,20);
+		Task2 T5=new Task2(30,50);
+		T4.display();
+		T5.display();
+		
+	}
+
+}
+
+class Task1{
+	String name;
+	int rollNumber;
+	String grade;
+	public Task1(String name,int rollNumber,String grade){
+		this.name=name;
+		this.rollNumber=rollNumber;
+		this.grade=grade;
+		
+	}
+	void displayStudentInfo() {
+		System.out.println("name:"+this.name);
+		System.out.println("rollNum:"+this.rollNumber);
+		System.out.println("grade "+this.grade);
+		
+	}
+	boolean isPassed() {
+		if(this.grade.equals("A")||this.grade.equals("B") || this.grade.equals("C")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+}
+
+class Task2{
+	double length;
+	double width;
+	Task2(double length,double width){
+		this.length=length;
+		this.width=width;	
+	}
+	double calculateArea(){
+		return this.length*this.width;
+	}
+	double calculatePerimeter() {
+		return 2*(this.length+this.width);
+	}
+	void display() {
+		System.out.println("length:"+this.length);
+		System.out.println("Width:"+this.width);
+		System.out.println("calculateArea:"+calculateArea());
+		System.out.println("calculateArea:"+calculatePerimeter());
+	}
+}
