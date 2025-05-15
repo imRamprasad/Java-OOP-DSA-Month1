@@ -33,7 +33,7 @@ public class Day1ClassesObjects {
 	}
 
 }
-
+							//Task1 Create a Student Class
 class Task1{
 	String name;
 	int rollNumber;
@@ -60,7 +60,7 @@ class Task1{
 		
 	}
 }
-
+								//Task2 Create a Rectangle Class
 class Task2{
 	double length;
 	double width;
@@ -81,7 +81,7 @@ class Task2{
 		System.out.println("calculateArea:"+calculatePerimeter());
 	}
 }
-
+									//Task3 Create a BankAccount Class
 class Task3{
 	String accountNumber;
 	String accountHolder;
