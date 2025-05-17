@@ -1,5 +1,5 @@
 package month1;
-
+								//Day 2 Plan: Java OOP Continued — Constructors, Inheritance, and Polymorphism
 public class Day2 {
 
 	public static void main(String[] args) {

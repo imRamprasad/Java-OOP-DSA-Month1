@@ -1,5 +1,5 @@
 package month1;
-
+										//Day 3 Plan: Java OOP – Encapsulation, Getters & Setters, and Static Members
 public class Day3 {
 	public static void main(String args[]) {
 							//Task 1: Create an EncapsulatedStudent Class
